@@ -1,3 +1,3 @@
 # VizualtechTW
 
-#gulp - to start project
+gulp - to start project
