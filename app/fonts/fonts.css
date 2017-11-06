@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'FuturaMdBtBold';
+    src: url('FuturaMdBtBold.ttf');
+}
+
+@font-face {
+    font-family: 'LucidaGrandeBold';
+    src: url('../fonts/LucidaGrandeBold.ttf');
+}
+
+@font-face {
+    font-family: 'LucidaGrande';
+    src: url('../fonts/LucidaGrande.ttf');
+}
+
+@font-face {
+    font-family: 'FuturaLightBt';
+    src: url('../fonts/FuturaLightBt.ttf');
+}
+
+@font-face {
+    font-family: 'FuturaMediumBt';
+    src: url('../fonts/FuturaMediumBt.ttf');
+    font-weight: 100;
+}
