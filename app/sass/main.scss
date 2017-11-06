@@ -73,52 +73,10 @@ body {
 		}
 	}
 
-	.doubleLine {
-		width: 100%;
-		border-top: 1px solid #e2ddd8;
-		border-bottom: 1px solid #e2ddd8;
-		height: 5px;
-		margin-top: 38px;
-	}
 
-	.navigationBlock {
-		max-width: 1140px;
-		margin: auto;
+	section	{
 
 
-		.navigation {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			height: 55px;
-			line-height: 64px;
-
-
-			a {
-				text-decoration: none;
-				font-size: 14px;
-				font-weight: 300;
-				text-transform: uppercase;
-				color: #5a5a5a;
-				font-family: FuturaMediumBt;
-
-				&:hover {
-					color: #1c285b;
-					border-top: 3px solid #1c285b;
-				}
-			}
-		}
-	}
-
-	.imgBlock {
-		width: 100%;
-		height: 232px;
-		position: relative;
-
-		img {
-			width: 100%;
-			height: 100%;
-		}
 
 		.wrapperDropDown {
 			display: block;
@@ -162,6 +120,89 @@ body {
 				width: 100%;
 			}
 		}
+
+
+		#wedding {
+
+			&:before {
+				display: none;
+				position: absolute;
+				margin-top: -5px;
+				content: '';
+				vertical-align: middle;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				width: 65px;
+				border-top: 3px solid #1c285b;
+
+			}
+
+			&:hover {
+				color: #1c285b;
+
+				.wrapperDropDown {
+					display: block;
+				}
+
+
+				&:before {
+					display: block;
+					color: #1c285b;
+				}
+			}
+		}
+	}
+
+
+
+
+	.doubleLine {
+		width: 100%;
+		border-top: 1px solid #e2ddd8;
+		border-bottom: 1px solid #e2ddd8;
+		height: 5px;
+		margin-top: 38px;
+	}
+
+	.navigationBlock {
+		max-width: 1140px;
+		margin: auto;
+
+
+		.navigation {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			height: 55px;
+			line-height: 64px;
+
+
+
+
+			a {
+				text-decoration: none;
+				font-size: 14px;
+				font-weight: 300;
+				text-transform: uppercase;
+				color: #5a5a5a;
+				font-family: FuturaMediumBt;
+
+			}
+		}
+	}
+
+	.imgBlock {
+		width: 100%;
+		height: 232px;
+		position: relative;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+
+
 	}
 
 	.pebblePaper {
@@ -210,9 +251,38 @@ body {
 				width: 600px;
 				height: 550px;
 				border: 5px solid #fff;
+				position: relative;
+
+				.triangleBlock {
+					position: absolute;
+					background: red;
+					top: 50%;
+					width: 100%;
+					height: 0;
+
+					&:after {
+						content: '';
+						position: absolute;
+						left: 0;
+						bottom: -20px;
+						border: 50px solid transparent;
+						border-left: 50px solid #fff;
+					}
+
+					&:before {
+						content: '';
+						position: absolute;
+						right: 0;
+						bottom: -20px;
+						border: 50px solid transparent;
+						border-right: 50px solid #fff;
+					}
+				}
 
 				img {
 					width: 100%;
+
+
 				}
 			}
 		}
